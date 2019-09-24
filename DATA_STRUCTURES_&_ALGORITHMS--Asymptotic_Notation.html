@@ -1,0 +1,18 @@
+<!doctype html><html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Asymptotic Notation</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+<body><div class="main"><div class="tree">
+<p><strong>Index</strong></p>
+<p><a href="DATA_STRUCTURES_&_ALGORITHMS.html">DATA STRUCTURES & ALGORITHMS</a></p>
+
+<ol>
+<li><a href="DATA_STRUCTURES_&_ALGORITHMS--Asymptotic_Notation.html">Asymptotic Notation</a></li>
+<li><a href="DATA_STRUCTURES_&_ALGORITHMS--Complexity_Analysis_theory.html">Complexity Analysis theory</a></li>
+<li><a href="DATA_STRUCTURES_&_ALGORITHMS--Abstract_Data_Types.html">Abstract Data Types</a></li>
+</ol></div>
+<div class="page"><h1><b><u>Asymptotic Notation</u></b></h1><h1>Asymptotic Analysis:</h1><br /><br />    &gt; How the RUNNING_TIME of an algorithm increases with the increase in INPUT_SIZE.<br />    &gt; To find the rate_of_growth_runnig_time of an algorithm, BIG O Notation is used.<br /><br />BIG O NOTATION:<br />    &gt; It is the most commonly used mathematical tool to measure efficiency of an algorithm.<br />    &gt; Notation,             f(n) → It is a function whose rate of growth we need to examine.<br />                                     g(n)  →It is function whose rate of growth we already know.<br />    &gt; Mathematically, <br />                                         f(n) is O(g(n)     if there exists constant c and input n0 such that<br />                                         f(n) &lt;= c*g(n)    for all n &gt; n0<br />                which means,<br />                                           f(n) cannot grow faster than function g(n) which also implies g(n) is upperBound for f(n).                                         <br />                f(n) is O(g(n))  becomes INFORMATIVE if when g(n) is the smallest possible function(tight_upper_bound) which satisfies the definition of Big O ( f(n) is O(g(n)) ).<br />          <br /> * TIGHT UPPER BOUND &amp; LOOSE UPPER BOUND      <br /><img src="images/3-1.png" alt="images/3-1.png" /><br /><h2>Growth rate of Known function g(n) :</h2><br /><img src="images/3-2.png" alt="images/3-2.png" /><br /><br /><img src="images/3-3.png" alt="images/3-3.png" /><br /><br />So Fastest Growing term(like 3n2) is taken into consideration and other(slow growing term, constanats, coefficients) are discarded.<br />Note: Base of the logarithmic is not important for finding order of the function.<br /> <br /><img src="images/3-4.png" alt="images/3-4.png" /><br /><br /><br /><br /><br /><br /> </div></div>
+</body></html>
