@@ -1,0 +1,40 @@
+<!doctype html><html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Arrays or List</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+<body><div class="main"><div class="tree">
+<p><strong>Index</strong></p>
+<p><a href="DATA_STRUCTURES_&_ALGORITHMS.html">DATA STRUCTURES & ALGORITHMS</a></p>
+
+<ol>
+<li><a href="DATA_STRUCTURES_&_ALGORITHMS--Asymptotic_Notation.html">Asymptotic Notation</a></li>
+<li><a href="DATA_STRUCTURES_&_ALGORITHMS--Complexity_Analysis_theory.html">Complexity Analysis theory</a></li>
+<li><a href="DATA_STRUCTURES_&_ALGORITHMS--Abstract_Data_Types(ADT).html">Abstract Data Types(ADT)</a></li>
+<li><a href="DATA_STRUCTURES_&_ALGORITHMS--Built-in_Functions().html">Built-in Functions()</a></li>
+<ol>
+<li><a href="DATA_STRUCTURES_&_ALGORITHMS--Built-in_Functions()--Math.html">Math</a></li>
+<li><a href="DATA_STRUCTURES_&_ALGORITHMS--Built-in_Functions()--Type_Conversion.html">Type Conversion</a></li>
+<li><a href="DATA_STRUCTURES_&_ALGORITHMS--Built-in_Functions()--Iterable_and_iterators.html">Iterable and iterators</a></li>
+<li><a href="DATA_STRUCTURES_&_ALGORITHMS--Built-in_Functions()--Composite_Data_Types.html">Composite Data Types</a></li>
+<li><a href="DATA_STRUCTURES_&_ALGORITHMS--Built-in_Functions()--Classes,_Attributes,_Inheritance.html">Classes, Attributes, Inheritance</a></li>
+<li><a href="DATA_STRUCTURES_&_ALGORITHMS--Built-in_Functions()--Input-Output.html">Input/Output</a></li>
+<li><a href="DATA_STRUCTURES_&_ALGORITHMS--Built-in_Functions()--Variables,_References,_Scope.html">Variables, References, Scope</a></li>
+<li><a href="DATA_STRUCTURES_&_ALGORITHMS--Built-in_Functions()--Miscellaneous.html">Miscellaneous</a></li>
+<li><a href="DATA_STRUCTURES_&_ALGORITHMS--Built-in_Functions()--Escape_Sequence.html">Escape Sequence</a></li>
+</ol>
+<li><a href="DATA_STRUCTURES_&_ALGORITHMS--Arrays_or_List.html">Arrays or List</a></li>
+</ol>
+<p><a href="WEB_DEVELOPMENT.html">WEB DEVELOPMENT</a></p>
+
+<ol>
+<li><a href="WEB_DEVELOPMENT--CSS.html">CSS</a></li>
+<li><a href="WEB_DEVELOPMENT--CSS_LAYOUT.html">CSS LAYOUT</a></li>
+</ol>
+<p><a href="Better_Python.html">Better Python</a></p>
+
+</div>
+<div class="page"><h1><b><u>Arrays or List</u></b></h1><h1>REFRENTIAL ARRAYS<br />------------------------------</h1><br />• A List in Python is dynamic arrays where size of the arrays can change dynamically according to the number of elements it contains.<br />• It can store any kind of data types.<br /><br />HOW THE SIZE OF DYNAMIC ARRAY GROWS ?<br /><img src="images/18-1.png" alt="images/18-1.png" /><br /><br />&gt; The new arrays grows twice the size of the filled array.<br />&gt; when the old arrays is filled, python creates a new array which is <strong>twice</strong> the size of the old filled array.<br />&gt; Then all the references of the objects(not actual objects from the old arrays are copied to the new array.<br />&gt; finally reference of the old array is copied the new array and then new array becomes the old array with larger capacity. <br />&gt; Look at Justification :<br /><div class="codebox"><div class="codebox"><span style="color:#ff9d00;font-weight:700">!/</span>usr<span style="color:#ff9d00;font-weight:700">/</span>bin<span style="color:#ff9d00;font-weight:700">/</span>python3<br /><br /><span style="color:#3ad900;font-weight:400">'''<br />Demonstrating&nbsp;How&nbsp;the&nbsp;size&nbsp;of&nbsp;a&nbsp;list&nbsp;grows&nbsp;dynamicaly&nbsp;<br />when&nbsp;the&nbsp;elements&nbsp;in&nbsp;the&nbsp;list&nbsp;increases&nbsp;at&nbsp;run&nbsp;time.<br />'''</span><br />import&nbsp;sys<br /><br />n&nbsp;=&nbsp;15&nbsp;&nbsp;<span style="color:#0088ff;font-weight:400">#&nbsp;no.&nbsp;being&nbsp;appended&nbsp;to&nbsp;the&nbsp;list&nbsp;one&nbsp;by&nbsp;one</span><br />myList&nbsp;=&nbsp;[]<br /><span style="color:#ff9d00;font-weight:700">for</span>&nbsp;<span style="color:#80ffbb;font-weight:400">i</span>&nbsp;<span style="color:#ff9d00;font-weight:700">in</span>&nbsp;range<span style="color:#ff9d00;font-weight:700">(</span>n<span style="color:#ff9d00;font-weight:700">):</span><br />&nbsp;&nbsp;&nbsp;&nbsp;currentLength&nbsp;=&nbsp;len<span style="color:#ff9d00;font-weight:700">(</span>myList<span style="color:#ff9d00;font-weight:700">)</span><br />&nbsp;&nbsp;&nbsp;&nbsp;actualSize&nbsp;=&nbsp;sys.getsizeof<span style="color:#ff9d00;font-weight:700">(</span>myList<span style="color:#ff9d00;font-weight:700">)</span><br />&nbsp;&nbsp;&nbsp;&nbsp;print<span style="color:#ff9d00;font-weight:700">(</span><span style="color:#3ad900;font-weight:400">"Current&nbsp;Length&nbsp;of&nbsp;list&nbsp;is&nbsp;%d,&nbsp;and&nbsp;its&nbsp;Size&nbsp;in&nbsp;bytes&nbsp;is&nbsp;%d"</span>&nbsp;%<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#ff9d00;font-weight:700">(</span>currentLength,&nbsp;actualSize<span style="color:#ff9d00;font-weight:700">))</span><br />&nbsp;&nbsp;&nbsp;&nbsp;myList.append<span style="color:#ff9d00;font-weight:700">(</span>n<span style="color:#ff9d00;font-weight:700">)</span></div></div><br /><br /><br /><h3>Example 0: prime = [2,3,5,7,11,13,17,19]</h3><br />&gt; It means that  list has been created which stores 8 references in contigious memory, which points to those objects(list number) which can be anywhre in the memory.<br />&gt; The objects need not be in contigious memory.<br /><br /><h3>Example 1: </h3><br /><img src="images/18-2.png" alt="images/18-2.png" /><br />&gt; Actually in simple words, Reference slicing is taking place here instead of objects slicing. The number of objects (7,11,13) in them memory is still same/constant.<br />&gt; A new list  has been created with same references so that those references can point to the same exact objects to avoid duplicate objects and memory wastage.<br /><img src="images/18-3.png" alt="images/18-3.png" /><br /><h2>&gt; Now when temp[2]  = 15 is executed, then new reference  which points to object 15 is assigned to the index 2. </h2><br />&gt; It's NOT like object 15 is getting stored at index 2. But it generally assumed like that a higher level abstract to simply things.<br /><br /><h3>Example 2 : </h3><br /><img src="images/18-4.png" alt="images/18-4.png" /><br />&gt; It creates a list with 8 copies of same references which points to 0.<br /><img src="images/18-5.png" alt="images/18-5.png" /><br />&gt; when an element in the list(Counters) is modified, it just creates new objects as per operation and assigns its reference to the same index in list(Counter).<br />&gt; The operation doesn't modifies the existing object(0) which can be very costly so it creates new object and has to change only one reference other references in the list remains same. <br /><br /><h3>Example 3:</h3><br /><img src="images/18-6.png" alt="images/18-6.png" /><br />&gt; Same story in this case also:  When primes list is extended with extras list, the size of primes list is increased and references from the extras list is copied to the increased part of the list.<br />&gt; Again remember it's not actual objects/list is copied to the increased portion of the primes list because this can cause duplicacy of the same objects.<br /><br />TAKE AWAY: python stores only one copy of one unique objects to avoid wastage of memory and duplicacy.  If the same objects need to be copied,assigned then its reference is copied not the object.<br /><br /><br /><h2>Cost of inserting Elments in dynamic array:(append operation):</h2><br /><img src="images/18-7.png" alt="images/18-7.png" /></div></div>
+</body></html>
