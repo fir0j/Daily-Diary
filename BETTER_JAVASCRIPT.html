@@ -1,0 +1,44 @@
+<!doctype html><html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>BETTER JAVASCRIPT</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+<body><div class="main"><div class="tree">
+<p><strong>Index</strong></p>
+<p><a href="DATA_STRUCTURES_&_ALGORITHMS.html">DATA STRUCTURES & ALGORITHMS</a></p>
+
+<ol>
+<li><a href="DATA_STRUCTURES_&_ALGORITHMS--Asymptotic_Notation.html">Asymptotic Notation</a></li>
+<li><a href="DATA_STRUCTURES_&_ALGORITHMS--Complexity_Analysis_theory.html">Complexity Analysis theory</a></li>
+<li><a href="DATA_STRUCTURES_&_ALGORITHMS--Abstract_Data_Types(ADT).html">Abstract Data Types(ADT)</a></li>
+<li><a href="DATA_STRUCTURES_&_ALGORITHMS--Built-in_Functions().html">Built-in Functions()</a></li>
+<ol>
+<li><a href="DATA_STRUCTURES_&_ALGORITHMS--Built-in_Functions()--Math.html">Math</a></li>
+<li><a href="DATA_STRUCTURES_&_ALGORITHMS--Built-in_Functions()--Type_Conversion.html">Type Conversion</a></li>
+<li><a href="DATA_STRUCTURES_&_ALGORITHMS--Built-in_Functions()--Iterable_and_iterators.html">Iterable and iterators</a></li>
+<li><a href="DATA_STRUCTURES_&_ALGORITHMS--Built-in_Functions()--Composite_Data_Types.html">Composite Data Types</a></li>
+<li><a href="DATA_STRUCTURES_&_ALGORITHMS--Built-in_Functions()--Classes,_Attributes,_Inheritance.html">Classes, Attributes, Inheritance</a></li>
+<li><a href="DATA_STRUCTURES_&_ALGORITHMS--Built-in_Functions()--Input-Output.html">Input/Output</a></li>
+<li><a href="DATA_STRUCTURES_&_ALGORITHMS--Built-in_Functions()--Variables,_References,_Scope.html">Variables, References, Scope</a></li>
+<li><a href="DATA_STRUCTURES_&_ALGORITHMS--Built-in_Functions()--Miscellaneous.html">Miscellaneous</a></li>
+<li><a href="DATA_STRUCTURES_&_ALGORITHMS--Built-in_Functions()--Escape_Sequence.html">Escape Sequence</a></li>
+</ol>
+<li><a href="DATA_STRUCTURES_&_ALGORITHMS--Arrays_or_List.html">Arrays or List</a></li>
+</ol>
+<p><a href="WEB_DEVELOPMENT.html">WEB DEVELOPMENT</a></p>
+
+<ol>
+<li><a href="WEB_DEVELOPMENT--CSS.html">CSS</a></li>
+<li><a href="WEB_DEVELOPMENT--CSS_LAYOUT.html">CSS LAYOUT</a></li>
+</ol>
+<p><a href="BETTER_PYTHON.html">BETTER PYTHON</a></p>
+
+<p><a href="BETTER_JAVASCRIPT.html">BETTER JAVASCRIPT</a></p>
+
+<ol>
+<li><a href="BETTER_JAVASCRIPT--Interview_Questions.html">Interview Questions</a></li>
+</ol></div>
+<div class="page"><h1><b><u>BETTER JAVASCRIPT</u></b></h1><img src="images/20-1.png" alt="images/20-1.png" /><br /><img src="images/20-2.png" alt="images/20-2.png" /><br /><img src="images/20-3.png" alt="images/20-3.png" /><br /><img src="images/20-4.png" alt="images/20-4.png" /><br /><br />looping in javascritpt<br /><br /><img src="images/20-5.png" alt="images/20-5.png" /><br /><img src="images/20-6.png" alt="images/20-6.png" /><br />spread operator<br /><img src="images/20-7.png" alt="images/20-7.png" /><br /><img src="images/20-8.png" alt="images/20-8.png" /><br /><img src="images/20-9.png" alt="images/20-9.png" /><br /><img src="images/20-10.png" alt="images/20-10.png" /><br /><br />async-wait: makes asynchronous code(promises) look synchronous .<br /><img src="images/20-11.png" alt="images/20-11.png" /><br /><img src="images/20-12.png" alt="images/20-12.png" /><br /><img src="images/20-13.png" alt="images/20-13.png" /><br /><img src="images/20-14.png" alt="images/20-14.png" /><br /><br /><h1>Explain AJAX ?</h1><br /><h3>&gt; It stands for ASYNCHRONOUS JAVASCRIPT AND XML which is a group of technology to  facilitate javascript program to request data after it finishes its complete execution .<br />&gt; It is used to make request which could take long time, but without blocking the normal program execution.<br /></h3><h2>&gt; Request communication happens with the help of xml or json file. JSON.stringify() by sender and JSON.parse() by receiver</h2><h3><br />&gt; It is achieved using v8 WebAPI like DOM events functions, setTmeout(),  xhr( XMLHttpReques() ) , fetch() and so on are asynchronous functions.<br /></h3><h2>&gt; when you make fetch(url), it will return something called promise which is accessed using .then(response =&gt; response.json() ) clause.</h2><h3><br />  The reply is named promise because it promises to return some data after sometime in the future but doesn't specify when. Promise returns the response after completely executing<br />  code inside its callback function.<br />   Sometimes promise is said to be broken(rejected) if it fails to return any value or returns errror which can be due to technical problems in network, or  server.<br /></h3><h2>    response.json() comes with fetch() which is equivalent to JSON.parse(response).</h2><br /><img src="images/20-15.png" alt="images/20-15.png" /><br />  <br />    <img src="images/20-16.png" alt="images/20-16.png" /><br />&gt; it's like accessing promise{<br />                                                         response {<br />                                                                                data: “ ”<br />                                                                                }<br />                                                            }<br />                                        }<br />                                                            <br />&gt; Promises can be in three state. a) pending b) filled c) rejected.<br />&gt; Why promise came into the picture ?<br />------ &gt; In development work, Every developers come accross scenerio / condition like IF THIS HAPPENS THEN DO THIS THEN AGAIN IF THIS HAPPENS THEN DO THIS and so on which is very common.<br />            To implement this, they uses two approaches before a) nested if else b) nested function call back which doesn't look preety.<br />            <img src="images/20-17.png" alt="images/20-17.png" /><img src="images/20-18.png" alt="images/20-18.png" /><br /> &gt; Hence Developers come with something called 3rd approach promise.<br /> <img src="images/20-19.png" alt="images/20-19.png" /><br /> &gt; promise can be chained with any number of .then() and .catch()<br /> <br /><h1> Is promise Synchronous or Asynchronous ?</h1><br /> <img src="images/20-20.png" alt="images/20-20.png" /><br /> <img src="images/20-21.png" alt="images/20-21.png" /><br /> &gt; The code outside the promise i.e myProm.then()... has to wait for the code inside the promise (which is synchronous) to complete before it can begin execution.<br /> <br /><h1> When Do we need promise ?</h1><br /><h2>&gt; Promises are generally used to deal with asynchronous code which contains function (say a() )  involving fetch, dom events, setTimeout() etc. whose output is needed to make further calculation by another function(b) in the program. The another function(b) will wait for a() ‘s output to be executed otherwise won’t execute.</h2><br />&gt; The most common use case for a promise is to represent some value that's being generated or fetched in an asynchronous fashion. Logic that depends on that value can asynchronously wait until the value is available by registering a callback with .then() or related Promise methods.<br /><img src="images/20-22.png" alt="images/20-22.png" /><br />&gt; It error encountered in any of the .then() before .catch(), error can be handled nicely<br />&gt; if error encounter after .catch() in any of the .then(), error can be handled nicely, program will crash<br /><br />&gt; Real Usecase of the promise. <br /><br /> <img src="images/20-23.png" alt="images/20-23.png" /><br /><br />Now Most recently Developers have come with 4th approach called Async-await.<br /><br /><strong>What is Async-await ?</strong><br />&gt; async-wait is built on the top of the promise.<br />&gt; It is ES8 feature which is  just a new syntax to make code look better than promises but does the same thing what the promise does and it doesn't provide any new feature.<br /><h3>&gt; Code inside regular/synchronous functions can also be made asynchronous like fetch() using</h3><strong><h3> async-wait</h3></strong> keyword before regular function name.<br /><br /><img src="images/20-24.png" alt="images/20-24.png" /><br /><strong><h2>&gt; This is how we can make asynchronous code like fetch(), resp.json() inside regular/synchronous function ( fetchUsers() ) to be synchronous</h2></strong><h2> </h2><strong><h2>or to execute synchronously</h2></strong> (  i.e do not run second before first one completes its execution )<br /><br />&gt; One important thing about async-await is that you can store the result of promises as they get resolved which gives feel of synchronous code.<br /><strong>&gt; Both Syntaxes are getting the same thing done. You can choose any, which you feel gives cleaner code in your scenario.</strong><br /><img src="images/20-25.png" alt="images/20-25.png" /><br /><img src="images/20-26.png" alt="images/20-26.png" /><br /><br /><br /><br /></div></div>
+</body></html>
